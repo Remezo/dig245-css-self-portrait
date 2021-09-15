@@ -1,2 +1,142 @@
+.container {
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-/* css */
+.face {
+  width: 180px;
+  height: 235px;
+  background: #AF6E51;
+  border-radius: 50%;
+  position: relative;
+}
+
+.hair {
+  position: absolute;
+  background: #191210;
+  width: 150px;
+  height: 60px;
+  left: 50%;
+  transform: translateX(-50%) translateY(-30%);
+  border-radius: 20px;
+}
+
+
+
+.face-cover {
+  position: absolute;
+}
+
+.shaved-head {
+  background:#191210 ;
+  position: absolute;
+  transform: translateY(-17%);
+
+}
+
+.ear {
+  box-shadow: none;
+  position: absolute;
+  background: #AF6E51;
+  width: 50px;
+  height: 70px;
+}
+
+.left-ear {
+  transform: translateX(-30%) translateY(100%) rotate(-30deg);
+}
+
+.right-ear {
+  right: 0;
+  transform: translateX(30%) translateY(100%) rotate(30deg);
+}
+
+.goatee {
+  width: 90px;
+  height: 20px;
+  position: absolute;
+  background: rgba(0,0,0,0.8);
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(45%);
+  clip-path: polygon(0 40%, 100% 41%, 68% 100%, 34% 100%);
+}
+
+.eye {
+  background: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
+.left-eye {
+   transform: translateX(-130%) translateY(-70%) rotate(10deg);
+}
+
+.right-eye {
+   transform: translateX(30%) translateY(-70%) rotate(-10deg);
+}
+
+.pupil {
+  left: 35%;
+  top: 40%;
+  background: black;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.mustache {
+  position: absolute;
+  font-family: serif;
+  top: 50%;
+  left: 50%;
+  font-size: 9rem;
+  color: rgba(0, 0, 0, 0.8);
+  transform: translate(-50%, -25%) rotate(0deg);
+}
+
+
+
+.mouth {
+  position: absolute;
+  top: 50%;
+  left: 53%;
+  font-size: 96px;
+  color: #843722;
+  transform: translate(-50%, 15%) rotate(90deg);
+}
+
+.eyebrow {
+  position: absolute;
+  font-family: futura;
+  left: 50%;
+  top: 10%;
+  font-size: 4rem;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.right-eyebrow {
+    transform: translate(70%) rotate(80deg);
+}
+
+.left-eyebrow {
+    transform: translate(-170%) rotate(-80deg);
+}
+
+.nose {
+  position: absolute;
+  font-size: 3rem;
+  top: 50%;
+  left: 50%;
+  color: #C69076;
+  transform: translate(-60%, 0%) rotate(-10deg);
+}

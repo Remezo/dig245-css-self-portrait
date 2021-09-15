@@ -18,3 +18,12 @@ Staaatliches Bauhaus (1919-1933)
 `;
 
 console.log(bauhaus);
+
+document.addEventListener("mousemove", () => {
+  let x = event.clientX;
+  let y = event.clientY;
+  document.getElementById("coordinates").innerHTML = [x, y];
+});
+
+let elements = document.querySelectorAll("div");
+console.log("Total number of HTML elements: " + elements.length);
